@@ -163,6 +163,6 @@ pred=function(i,j,ll)
 pred.all=function(ll)
 {
   n=length(ll$beta)
-  outer(1:n,1:n,pred,ll)
+  outer(1:n,1:n,pred,res=ll)
 }
 
