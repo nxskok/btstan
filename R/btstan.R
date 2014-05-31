@@ -128,8 +128,9 @@ elo.scale=function(rat)
 }
 
 
-run.rating=function(fname,model,ng=0)
+run.rating=function(fname,model,ng=0,predictions=T)
 {
+  # eliminate teams with fewer than ng games
   xy=make.clean(fname,ng)
   gc=game.count(xy$x)
   res=estimate(xy,model)
@@ -138,11 +139,17 @@ run.rating=function(fname,model,ng=0)
   dg=df[o,]
   row.names(dg)=1:length(gc)
   names(dg)=c("Team","Games","Rating")
-  list(tab=dg,cc=res$cc)
+  # predictions
+  if (predictions)
+  {
+    pp=pred.all(res)
+  }
+  
+  list(tab=dg,cc=res$cc,pred=pp)
 }
 
 
-pred=function(ll,i,j)
+pred=function(i,j,ll)
 {
   eta=ll$beta[i]-ll$beta[j];
   cc=c(-ll$cc,ll$cc)
@@ -156,20 +163,6 @@ pred=function(ll,i,j)
 pred.all=function(ll)
 {
   n=length(ll$beta)
-  tn=names(ll$beta)
-  t1=character(0)
-  t2=character(0)
-  p=numeric(0)
-  for (i in 1:n)
-  {
-    for (j in 1:n)
-    {
-      pp=pred(ll,i,j)
-      t1=c(t1,tn[i])
-      t2=c(t2,tn[j])
-      p=rbind(p,pp)
-    }
-  }
-  data.frame(t1,t2,p)
+  outer(1:n,1:n,pred,ll)
 }
 

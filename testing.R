@@ -1,8 +1,12 @@
 bto.sc=compile.model()
-fname="/home/ken/teaching/stan/sx.dat"
-ans=run.rating(fname,bto.sc,20)
+#fname="/home/ken/sports/sx.dat"
+fname="/home/ken/teaching/stan/cfl.dat"
+ans=run.rating(fname,bto.sc,0,T)
 head(ans$tab)
-
+ans$cc
+ans$tab
+ans$pred
+pred(ans,1,1)
 ng=0
 xy=make.clean(fname,ng)
 gc=game.count(xy$x)
