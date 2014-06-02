@@ -155,14 +155,21 @@ pred=function(i,j,ll)
   cc=c(-ll$cc,ll$cc)
   xx=outer(eta,cc,"-")
   p=plogis(xx)
-  p=c(1,p,0)
-  p
-  -diff(p)
+  p=cbind(1,p,0)
+  t(-apply(p,1,diff))
 }
+
 
 pred.all=function(ll)
 {
   n=length(ll$beta)
-  outer(1:n,1:n,pred,res=ll)
+  ans=array(0,c(n,n,3))
+  for (i in 1:n)
+  {
+    for (j in 1:n)
+    {
+      ans[i,j,]=pred(i,j,ll)
+    }
+  }
+  ans
 }
-

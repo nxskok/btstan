@@ -27,6 +27,23 @@ p
 # this converts rows to columns but is otherwise kosher
 -apply(p,1,diff)
 
+res
+pred.all(res)
+pred(1,2,res)
+eta=res$beta[1:2]-res$beta[3:4];
+eta
+cc=c(-res$cc,res$cc)
+cc
+xx=outer(eta,cc,"-")
+xx
+p=plogis(xx)
+p=cbind(1,p,0)
+p
+t(-apply(p,1,diff))
+-diff(p)
+pred(1:3,2:4,res)
+
+
 
 ans=run.rating(fname,bto.sc,0,T)
 head(ans$tab)
