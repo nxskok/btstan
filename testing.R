@@ -43,7 +43,23 @@ t(-apply(p,1,diff))
 -diff(p)
 pred(1:3,2:4,res)
 
+res
+pp=pred.all(res)
+pp[1,3,]
 
+pred.all=function(ll)
+{
+  n=length(ll$beta)
+  ans=array(0,c(n,n,3))
+  for (i in 1:n)
+  {
+    for (j in 1:n)
+    {
+      ans[i,j,]=pred(i,j,ll)
+    }
+  }
+  ans
+}
 
 ans=run.rating(fname,bto.sc,0,T)
 head(ans$tab)
@@ -51,9 +67,27 @@ ans$cc
 ans$tab
 ans$pred
 pred(ans,1,1)
+pred.all(ans)
+ans
 ng=0
 xy=make.clean(fname,ng)
 gc=game.count(xy$x)
 gc
 res=estimate(xy,bto.sc)
 df=data.frame(team=names(res$beta),gc,elo.scale(res$beta))
+
+#make up some data for testing pred.all
+
+res=list(beta=c(2,1.5,1,0.5),cc=0.8)
+ans=pred.all(res)
+ans[2,4,]
+
+pp=numeric(0)
+for (i in 1:4)
+{
+  for (j in 1:4)
+  {
+    pp=rbind(pp,c(i,j,ans[i,j,]))
+  }
+}
+pp
