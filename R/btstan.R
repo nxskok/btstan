@@ -1,6 +1,5 @@
 
-compile.model=function()
-{
+compile.model=function(){
   model='
 data
 {
@@ -52,6 +51,41 @@ makexy=function(res)
   y=res[,4]+1
   list(x=x,y=y,names=levels(f))
 }
+```{r, engine='bash', echo=F}
+perl uniqsas.pl
+```
+
+
+```{r, child='sas2.html'}
+```
+```{r, engine='bash', echo=F}
+perl uniqsas.pl
+```
+
+
+```{r, child='sas2.html'}
+```
+```{r, engine='bash', echo=F}
+perl uniqsas.pl
+```
+
+
+```{r, child='sas2.html'}
+```
+```{r, engine='bash', echo=F}
+perl uniqsas.pl
+```
+
+
+```{r, child='sas2.html'}
+```
+```{r, engine='bash', echo=F}
+perl uniqsas.pl
+```
+
+
+```{r, child='sas2.html'}
+```
 
 estimate=function(xylist,bto.sc)
 {
@@ -76,7 +110,7 @@ game.count=function(x,tf=rep(T,nrow(x)))
 {
   gc=table(c(x[tf,1],x[tf,2]))
   gc
-  gg=numeric(max(xy$x))
+  gg=numeric(max(x))
   gg[as.numeric(names(gc))]=gc
   gg
 }
@@ -128,7 +162,7 @@ elo.scale=function(rat)
 }
 
 
-run.rating=function(fname,model,ng=0,predictions=T)
+run.rating=function(fname,model,ng=0,sampling=F)
 {
   # eliminate teams with fewer than ng games
   xy=make.clean(fname,ng)
@@ -139,13 +173,7 @@ run.rating=function(fname,model,ng=0,predictions=T)
   dg=df[o,]
   row.names(dg)=1:length(gc)
   names(dg)=c("Team","Games","Rating")
-  # predictions
-  if (predictions)
-  {
-    pp=pred.all(res)
-  }
-  
-  list(tab=dg,cc=res$cc,pred=pp)
+  list(tab=dg,cc=res$cc)
 }
 
 
@@ -172,4 +200,25 @@ pred.all=function(ll)
     }
   }
   ans
+}
+
+estimate_bayes=function(xylist,bto.sc)
+{
+  stopifnot(is.list(xylist))
+  xx=xylist[[1]]
+  yy=xylist[[2]]
+  N=length(yy)
+  K=3
+  D=max(xx)
+  v=sampling(bto.sc,list(N=length(yy),K=3,D=max(xx),y=yy,x=xx))
+  #        v=optimizing(bto.sc,c("N","K","D","y","x"))
+  ss=extract(v)
+  ss$cc
+  theta=v$par
+  n=length(theta)
+  beta=theta[1:(n-1)]
+  names(beta)=xylist[[3]]
+  cc=theta[n]
+  ll=list(beta=beta,cc=cc)
+  ll
 }

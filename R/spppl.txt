@@ -1,0 +1,45 @@
+2016-02-06 17:45,1,1,FC Lugano,FC Vaduz
+2016-02-06 20:00,1,2,BSC Young Boys,Grasshopper Club
+2016-02-07 13:45,1,3,FC Zuerich,FC Sion
+2016-02-07 13:45,1,4,FC St. Gallen,FC Thun
+2016-02-07 16:00,1,5,FC Basel 1893,FC Luzern
+2016-02-13 17:45,2,6,FC Thun,FC Lugano
+2016-02-13 20:00,2,7,FC Vaduz,BSC Young Boys
+2016-02-14 13:45,2,8,FC Sion,FC St. Gallen
+2016-02-14 16:00,2,9,Grasshopper Club,FC Basel 1893
+2016-02-14 16:00,2,10,FC Luzern,FC Zuerich
+2016-02-20 17:45,3,11,FC Lugano,FC Zuerich
+2016-02-20 20:00,3,12,BSC Young Boys,FC Thun
+2016-02-21 13:45,3,13,Grasshopper Club,FC Sion
+2016-02-21 13:45,3,14,FC Basel 1893,FC Vaduz
+2016-02-21 16:00,3,15,FC Luzern,FC St. Gallen
+2016-02-27 17:45,4,16,FC Sion,FC Luzern
+2016-02-27 20:00,4,17,FC Zuerich,BSC Young Boys
+2016-02-28 13:45,4,18,FC Thun,FC Basel 1893
+2016-02-28 13:45,4,19,FC Vaduz,Grasshopper Club
+2016-02-28 16:00,4,20,FC St. Gallen,FC Lugano
+2016-03-05 17:45,5,21,FC Zuerich,FC Thun
+2016-03-05 20:00,5,22,FC St. Gallen,Grasshopper Club
+2016-03-06 13:45,5,23,FC Sion,FC Vaduz
+2016-03-06 13:45,5,24,FC Lugano,FC Basel 1893
+2016-03-06 16:00,5,25,BSC Young Boys,FC Luzern
+2016-03-12 17:45,6,26,FC Vaduz,FC Thun
+2016-03-12 20:00,6,27,FC Luzern,FC Lugano
+2016-03-13 13:45,6,28,FC Basel 1893,FC St. Gallen
+2016-03-13 13:45,6,29,BSC Young Boys,FC Sion
+2016-03-13 16:00,6,30,Grasshopper Club,FC Zuerich
+2016-03-19 17:45,7,31,FC Thun,FC Luzern
+2016-03-19 20:00,7,32,FC St. Gallen,BSC Young Boys
+2016-03-20 13:45,7,33,Grasshopper Club,FC Lugano
+2016-03-20 13:45,7,34,FC Vaduz,FC Zuerich
+2016-03-20 16:00,7,35,FC Sion,FC Basel 1893
+2016-04-02 17:45,8,36,FC Luzern,FC Vaduz
+2016-04-02 20:00,8,37,FC Zuerich,FC St. Gallen
+2016-04-03 13:45,8,38,FC Thun,Grasshopper Club
+2016-04-03 13:45,8,39,FC Lugano,FC Sion
+2016-04-03 16:00,8,40,FC Basel 1893,BSC Young Boys
+2016-04-09 17:45,9,41,BSC Young Boys,FC Lugano
+2016-04-09 20:00,9,42,Grasshopper Club,FC Luzern
+2016-04-10 13:45,9,43,FC Basel 1893,FC Zuerich
+2016-04-10 13:45,9,44,FC Sion,FC Thun
+2016-04-10 16:00,9,45,FC Vaduz,FC St. Gallen

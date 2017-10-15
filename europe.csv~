@@ -1,0 +1,322 @@
+country,level,round,season_start,comp
+England,1,reg season,2017,41547
+Norway,1,reg season,2016,33922
+Sweden,1,reg season,2016,33927
+Sweden,2,reg season,2016,33944
+Estonia,1,reg season,2016,33945
+Ireland,1,reg season,2016,34026
+Kazakhstan,1,reg season,2016,34077
+Kazakhstan,1,relegation,2016,34078
+Kazakhstan,1,champ,2016,34079
+Finland,1,reg season,2016,34245
+Faroe Islands,1,reg season,2016,34481
+Iceland,1,reg season,2016,34548
+Latvia,1,reg season,2016,34623
+Lithuania,1,reg season,2016,34661
+Belarus,1,reg season,2016,34862
+Scotland,2,reg season,2016,35425
+Malta,1,reg season,2016,35452
+Hungary,1,reg season,2016,35466
+Europa League,1,1qr,2016,35523
+Europa League,1,2qr,2016,35524
+Europa League,1,3qr,2016,35525
+Europa League,1,po,2016,35526
+Europa League,1,gs,2016,35527
+Europa League,1,r32,2016,35528
+Europa League,1,r16,2016,35529
+Europa League,1,r8,2016,35530
+Europa League,1,r4,2016,35531
+Europa League,1,r2,2016,35532
+Champions League,1,1qr,2016,35547
+Champions League,1,2qr,2016,35548
+Champions League,1,3qr,2016,35549
+Champions League,1,po,2016,35550
+Champions League,1,gs,2016,35551
+Champions League,1,r16,2016,35552
+Champions League,1,r8,2016,35553
+Champions League,1,r4,2016,35554
+Champions League,1,r2,2016,35555
+England,8,reg season,2016,35597
+England,8,reg season,2016,35598
+England,8,reg season,2016,35599
+England,8,reg season,2016,35600
+England,8,reg season,2016,35601
+England,8,reg season,2016,35602
+England,8,reg season,2016,35603
+England,8,reg season,2016,35604
+Andorra,1,champ,2016,35605
+Andorra,1,reg season,2016,35606
+Andorra,1,relegation,2016,35607
+England,7,reg season,2016,35623
+England,7,reg season,2016,35624
+England,7,reg season,2016,35625
+England,7,reg season,2016,35626
+England,7,reg season,2016,35627
+England,7,reg season,2016,35628
+England,7,reg season,2016,35629
+England,7,reg season,2016,35630
+England,7,reg season,2016,35631
+Liechtenstein,1,1st round,2016,35632
+Liechtenstein,1,2nd round,2016,35633
+Liechtenstein,1,F,2016,35634
+Liechtenstein,1,Q,2016,35635
+Liechtenstein,1,S,2016,35636
+Germany,1,reg season,2016,35823
+Germany,2,,2016,35824
+Northern Ireland,1,champ,2016,35832
+Northern Ireland,1,rel,2016,35833
+Northern Ireland,1,el playoffs,2016,35834
+Northern Ireland,1,reg season,2016,35835
+Northern Ireland,1,relegation,2016,35836
+France,2,,2016,35875
+Scotland,1,reg season,2016,35877
+Scotland,1,Phase 2,2016,35878
+France,1,reg season,2016,35879
+Spain,1,reg season,2016,35880
+Portugal,1,reg season,2016,35881
+Croatia,1,reg season,2016,35882
+Czech Republic,1,reg season,2016,35886
+Austria,1,reg season,2016,35887
+Poland,1,champ,2016,35889
+Poland,1,reg season,2016,35890
+Poland,1,relegation,2016,35891
+Ukraine,1,reg,2016,35893
+England,5,Playoff 1,2016,35947
+England,5,Playoff 1,2016,35948
+England,5,reg season,2016,35949
+Wales,1,1st phase,2016,35964
+Wales,1,2nd phase,2016,35965
+England,1,reg season,2016,35992
+Cyprus,1,relegation,2016,35995
+Cyprus,1,reg season,2016,35996
+Cyprus,1,champ,2016,35997
+Turkey,1,reg season,2016,36002
+Italy,1,reg season,2016,36003
+Gibraltar,1,reg season,2016,36004
+Bosnia-Herzegovina,1,reg season,2016,36005
+Scotland,1,playoffs,2016,36070
+Scotland,1,playoffs,2016,36071
+Scotland,1,playoffs,2016,36072
+Germany,1,playoffs,2016,36073
+England,6,Playoff 1,2016,36273
+England,6,Playoff 1,2016,36274
+England,6,reg season,2016,36275
+England,6,Playoff 1,2016,36276
+England,6,Playoff 1,2016,36277
+England,6,reg season,2016,36278
+Georgia,1,reg season,2016,36346
+Netherlands,1,el playoffs,2016,36383
+Netherlands,1,el playoffs,2016,36384
+Netherlands,1,reg season,2016,36385
+Russia,1,reg season,2016,36386
+Luxembourg,1,reg season,2016,36387
+Slovenia,1,reg season,2016,36395
+Slovakia,1,reg season,2016,36397
+Israel,1,champ,2016,36478
+Israel,1,reg season,2016,36479
+Israel,1,relegation,2016,36480
+Switzerland,1,reg season,2016,36501
+Azerbaijan,1,reg season,2016,36515
+Armenia,1,reg season,2016,36553
+Macedonia,1,reg season,2016,36556
+England,2,Playoff 1,2016,36636
+England,2,Playoff 1,2016,36637
+England,2,reg season,2016,36638
+England,3,Playoff 1,2016,36639
+England,3,Playoff 1,2016,36640
+England,3,reg season,2016,36641
+England,4,Playoff 1,2016,36642
+England,4,Playoff 1,2016,36643
+England,4,reg season,2016,36644
+Serbia,1,champ,2016,36654
+Serbia,1,reg season,2016,36655
+Serbia,1,relegation,2016,36656
+Denmark,1,reg season,2016,36663
+Belgium,1,Playoff 1,2016,36666
+Belgium,1,reg season,2016,36668
+Greece,1,playoffs,2016,36669
+Greece,1,reg season,2016,36670
+Moldova,1,reg season,2016,36817
+Bulgaria,1,reg season,2016,36871
+Romania,1,champ,2016,36872
+Romania,1,reg season,2016,36873
+Romania,1,relegation,2016,36874
+Montenegro,1,reg season,2016,36876
+Ukraine,1,champ,2016,37028
+Ukraine,1,relegation,2016,37029
+Albania,1,reg season,2016,37049
+Italy,2,reg season,2016,37192
+Georgia,1,el playoffs,2016,37525
+Georgia,1,el playoffs,2016,37526
+Georgia,1,champ,2016,37527
+Georgia,1,relegation,2016,37528
+Bosnia-Herzegovina,1,champ,2016,37712
+Bosnia-Herzegovina,1,relegation,2016,37713
+Spain,2,reg season,2016,37748
+Bulgaria,1,champ,2016,37902
+Bulgaria,1,relegation,2016,37903
+Greece,2,reg season,2016,38508
+San Marino,1,Playoff 1,2016,38590
+San Marino,1,Playoff 2,2016,38591
+San Marino,1,Playoff 3,2016,38592
+San Marino,1,Playoff 4,2016,38593
+San Marino,1,Playoff 5,2016,38594
+San Marino,1,Playoff 6,2016,38595
+San Marino,1,reg season,2016,38596
+Iceland,1,reg season,2017,39085
+Faroe Islands,1,reg season,2017,39201
+Ireland,1,reg season,2017,39233
+Sweden,2,reg season,2017,39292
+Sweden,1,reg season,2017,39293
+Kazakhstan,1,reg season,2017,39316
+Estonia,1,reg season,2017,39318
+Latvia,1,reg season,2017,39408
+Finland,1,reg season,2017,39409
+Norway,1,reg season,2017,39484
+Belarus,1,reg season,2017,39607
+Georgia,1,reg season,2017,39831
+Lithuania,1,reg season,2017,40153
+Azerbaijan,1,reg season,2017,40864
+England,7,reg season,2017,40938
+England,7,reg season,2017,40939
+England,7,reg season,2017,40940
+England,7,reg season,2017,40941
+England,7,reg season,2017,40942
+England,7,reg season,2017,40943
+England,7,reg season,2017,40944
+England,7,reg season,2017,40945
+England,7,reg season,2017,40946
+England,8,reg season,2017,40947
+England,8,reg season,2017,40948
+England,8,reg season,2017,40949
+England,8,reg season,2017,40950
+England,8,reg season,2017,40951
+England,8,reg season,2017,40952
+England,8,reg season,2017,40953
+England,8,reg season,2017,40954
+Scotland,2,reg season,2017,40975
+Malta,1,reg season,2017,41154
+England,6,Playoff 1,2017,41337
+England,6,reg season,2017,41338
+England,6,reg season,2017,41339
+England,6,Playoff 1,2017,41340
+England,6,reg season,2017,41341
+England,6,Playoff 1,2017,41342
+Northern Ireland,1,champ,2017,41350
+Northern Ireland,1,el playoffs,2017,41351
+Northern Ireland,1,el playoffs,2017,41352
+Northern Ireland,1,reg season,2017,41353
+Northern Ireland,1,relegation,2017,41354
+Wales,1,1st phase,2017,41356
+Wales,1,2nd phase,2017,41357
+Andorra,1,champ,2017,41457
+Andorra,1,reg season,2017,41458
+Andorra,1,relegation,2017,41459
+Germany,1,reg season,2017,41485
+Germany ,2,reg season,2017,41486
+Scotland,1,reg season,2017,41506
+Scotland,1,Phase 2,2017,41507
+Spain,1,reg season,2017,41509
+England,1,reg season,2017,41547
+Israel,1,champ,2017,41564
+Israel,1,reg season,2017,41565
+Israel,1,relegation,2017,41566
+Luxembourg,1,reg season,2017,41575
+Serbia,1,relegation,2017,41604
+Serbia,1,reg season,2017,41605
+Serbia,1,champ,2017,41606
+Belgium,1,Playoff 1,2017,41607
+Belgium,1,reg season,2017,41608
+England,5,Playoff 1,2017,41641
+France,1,reg season,2017,41646
+France,2,reg season,2017,41647
+Portugal,1,reg season,2017,41648
+England,5,reg season,2017,41649
+England,5,reg season,2017,41650
+Cyprus,1,champ,2017,41682
+Cyprus,1,reg season,2017,41683
+Cyprus,1,relegation,2017,41684
+Russia,1,reg season,2017,41733
+San Marino,1,Playoff 1,2017,41795
+San Marino,1,Playoff 2,2017,41796
+San Marino,1,Playoff 3,2017,41797
+San Marino,1,Playoff 4,2017,41798
+San Marino,1,Playoff 5,2017,41799
+San Marino,1,Playoff 6,2017,41800
+San Marino,1,reg season,2017,41801
+England,3,playoff   ,2017,41818
+England,3,playoff   ,2017,41819
+England,3,reg season,2017,41820
+Europa League,1,r32,2017,41829
+Europa League,1,1qr,2017,41830
+Europa League,1,2qr,2017,41831
+Europa League,1,3qr,2017,41832
+Europa League,1,r16,2017,41833
+Europa League,1,r2,2017,41834
+Europa League,1,gs,2017,41835
+Europa League,1,po,2017,41836
+Europa League,1,r8,2017,41837
+Europa League,1,r4,2017,41838
+Liechtenstein,1,1st round,2017,41839
+Liechtenstein,1,2nd round,2017,41840
+Liechtenstein,1,F,2017,41841
+Liechtenstein,1,Q,2017,41842
+Liechtenstein,1,S,2017,41843
+Slovenia,1,reg season,2017,41879
+Austria,1,reg season,2017,41997
+Italy,1,reg season,2017,42011
+Hungary,1,reg season,2017,42012
+Czech Republic,1,reg season,2017,42013
+Bosnia-Herzegovina,1,champ,2017,42015
+Bosnia-Herzegovina,1,reg season,2017,42016
+Bosnia-Herzegovina,1,relegation,2017,42017
+Slovakia,1,reg season,2017,42021
+Albania,1,reg season,2017,42054
+England,2,playoff   ,2017,42068
+England,2,playoff   ,2017,42069
+England,2,reg season,2017,42070
+England,4,Playoff 1,2017,42071
+England,4,Playoff 1,2017,42072
+England,4,reg season,2017,42073
+Croatia,1,reg season,2017,42101
+Macedonia,1,reg season,2017,42190
+Armenia,1,reg season,2017,42191
+Netherlands,1,reg season,2017,42274
+Poland,1,champ,2017,42328
+Poland,1,reg season,2017,42329
+Poland,1,relegation,2017,42330
+Turkey,1,reg season,2017,42332
+Switzerland,1,reg season,2017,42346
+Denmark,1,champ,2017,42365
+Denmark,1,reg season,2017,42369
+Netherlands,1,rel,2017,42370
+Champions League,1,1qr,2017,42379
+Champions League,1,2qr,2017,42380
+Champions League,1,3qr,2017,42381
+Champions League,1,r16,2017,42382
+Champions League,1,r2,2017,42383
+Champions League,1,gs,2017,42384
+Champions League,1,po,2017,42385
+Champions League,1,r8,2017,42386
+Champions League,1,r4,2017,42387
+Moldova,1,reg season,2017,42404
+Montenegro,1,reg season,2017,42405
+Ukraine,1,champ,2017,42442
+Ukraine,1,reg,2017,42443
+Ukraine,1,relegation,2017,42444
+Romania,1,champ,2017,42472
+Romania,1,reg season,2017,42473
+Romania,1,relegation,2017,42474
+Greece,1,reg season,2017,42568
+Bulgaria,1,champ,2017,42663
+Bulgaria,1,champ,2017,42664
+Bulgaria,1,champ,2017,42665
+Bulgaria,1,champ,2017,42666
+Bulgaria,1,reg season,2017,42667
+Bulgaria,1,relegation,2017,42668
+Italy,2,reg season,2017,42672
+Northern Ireland,1,rel,2017,42877
+Spain,2,reg season,2017,42973
+England,6,reg season,2017,43426
+England,6,Playoff 1,2017,43427
+England,5,Playoff 1,2017,43428

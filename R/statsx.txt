@@ -1,0 +1,182 @@
+
+championsleague
+
+Benfica v Zenit St Petersburg                     64  45.31  37.50  17.19 0
+Paris St-Germain v Chelsea                        64  79.69  12.50   7.81 10
+KAA Gent v VfL Wolfsburg                          64  21.88  23.44  54.69 
+Roma v Real Madrid                                64  15.63  20.31  64.06 2
+Arsenal v Barcelona                               64  31.25  17.19  51.56 1
+Juventus v Bayern Munich                          64  35.94  31.25  32.81 
+Dynamo Kiev v Man City                            64  21.88  17.19  60.94 1
+PSV Eindhoven v Atlético Madrid                   64  14.06  35.94  50.00 2
+Real Madrid v Roma                                57  96.49   1.75   1.75 10
+VfL Wolfsburg v KAA Gent                          57  92.98   5.26   1.75 10
+Zenit St Petersburg v Benfica                     57  73.68  15.79  10.53 10
+Chelsea v Paris St-Germain                        57  56.14  24.56  19.30 
+Atlético Madrid v PSV Eindhoven                   57  80.70  15.79   3.51 10
+Man City v Dynamo Kiev                            56  94.64   1.79   3.57 10
+Barcelona v Arsenal                               57  85.96  10.53   3.51 10
+Bayern Munich v Juventus                          57  84.21  12.28   3.51 10
+
+europaleague
+
+Fenerbahçe v L'motiv Moscow                       36  80.56  11.11   8.33 10
+Borussia Dortmund v FC Porto                      35  82.86   8.57   8.57 10
+FC Midtjylland v Man Utd                          36   8.33  13.89  77.78 21
+Fiorentina v Tottenham                            36  61.11  13.89  25.00 1
+RSC Anderlecht v Olympiakos                       36  55.56  19.44  25.00 
+Sevilla v Molde                                   36  91.67   5.56   2.78 10
+St Etienne v Basel                                35  54.29  22.86  22.86 
+Villarreal v Napoli                               36  22.22  55.56  22.22 
+FC Augsburg v Liverpool                           36  13.89  41.67  44.44 2
+FC Sion v Sporting Braga                          36  58.33  25.00  16.67 0
+Galatasaray v Lazio                               36  30.56  50.00  19.44 
+Marseille v Athletic Bilbao                       36  47.22  30.56  22.22 
+Shakhtar Donetsk v FC Schalke 04                  36  55.56  22.22  22.22 
+Sparta Prague v FK Krasnodar                      36  69.44  19.44  11.11 0
+Sporting Lisbon v Bayer 04 Leverkusen             36  30.56  33.33  36.11 
+Valencia CF v Rapid Vienna                        36  88.89   5.56   5.56 10
+Sporting Braga v FC Sion                          32  68.75  21.88   9.38 0
+L'motiv Moscow v Fenerbahçe                       32  65.63  18.75  15.63 0
+Athletic Bilbao v Marseille                       32  78.13  15.63   6.25 10
+Bayer 04 Leverkusen v Sporting Lisbon             32  84.38   9.38   6.25 10
+FC Schalke 04 v Shakhtar Donetsk                  32  71.88  18.75   9.38 0
+FK Krasnodar v Sparta Prague                      32  43.75  28.13  28.13 
+Lazio v Galatasaray                               32  78.13  15.63   6.25 10
+Liverpool v FC Augsburg                           32  78.13  18.75   3.13 0
+Rapid Vienna v Valencia CF                        32  18.75  40.63  40.63 
+Basel v St Etienne                                32  43.75  43.75  12.50 0
+FC Porto v Borussia Dortmund                      32  28.13  43.75  28.13 
+Man Utd v FC Midtjylland                          32  87.50   9.38   3.13 10
+Molde v Sevilla                                   32   9.38  18.75  71.88 2
+Napoli v Villarreal                               32  81.25  12.50   6.25 10
+Olympiakos v RSC Anderlecht                       32  71.88  21.88   6.25 0
+Tottenham v Fiorentina                            32  62.50  25.00  12.50 0
+
+premierleague
+
+Aston Villa v Crystal Palace                     969  22.91  26.11  50.98 
+Bournemouth v West Ham                           969  35.60  32.20  32.20 
+Newcastle v Man Utd                              970  17.94  23.30  58.76 2
+Chelsea v West Brom                              966  85.92  10.56   3.52 10
+Man City v Everton                               967  73.84  18.72   7.45 10
+Southampton v Watford                            968  45.56  33.99  20.45 
+Stoke v Norwich                                  968  71.49  19.83   8.68 10
+Swansea v Sunderland                             969  55.11  30.44  14.45 0
+Liverpool v Arsenal                              969  24.97  32.40  42.62 
+Tottenham v Leicester                            968  59.92  23.86  16.22 0
+
+championship
+
+Blackburn v QPR                                   55  54.55  34.55  10.91 0
+Brentford v Middlesbrough                         55  12.73  41.82  45.45 2
+Bristol City v Preston                            55  49.09  30.91  20.00 
+Derby v Reading                                   55  76.36  16.36   7.27 10
+Huddersfield v Charlton                           55  56.36  25.45  18.18 0
+Ipswich v Leeds                                   55  67.27  23.64   9.09 0
+MK Dons v Burnley                                 55  10.91  27.27  61.82 2
+Nottm Forest v Birmingham                         55  30.91  50.91  18.18 0
+Rotherham v Brighton                              55  18.18  25.45  56.36 2
+Sheff Wed v Bolton                                55  76.36  16.36   7.27 10
+Wolves v Fulham                                   55  56.36  30.91  12.73 0
+Hull v Cardiff                                    55  72.73  25.45   1.82 0
+
+facup
+
+Exeter v Liverpool                               124   4.84   3.23  91.94 21
+Wycombe v Aston Villa                            121  23.97  18.18  57.85 1
+Arsenal v Sunderland                             121  92.56   4.96   2.48 10
+Birmingham v Bournemouth                         120  31.67  21.67  46.67 
+Brentford v Walsall                              120  82.50  13.33   4.17 10
+Bury v Bradford                                  120  37.50  34.17  28.33 
+Colchester v Charlton                            119  24.37  20.17  55.46 
+Doncaster v Stoke                                120   5.83   8.33  85.83 21
+Eastleigh v Bolton                               119  19.33  19.33  61.34 
+Everton v Dag & Red                              118  95.76   2.54   1.69 10
+Hartlepool v Derby                               119   6.72   5.88  87.39 21
+Huddersfield v Reading                           118  29.66  36.44  33.90 
+Hull v Brighton                                  118  50.00  33.05  16.95 0
+Ipswich v Portsmouth                             118  78.81  10.17  11.02 10
+Leeds v Rotherham                                118  69.49  20.34  10.17 0
+
+ligue1
+
+Paris St-Germain v Bastia                         54  98.15   0.00   1.85 10
+Lyon v Troyes                                     53  90.57   5.66   3.77 10
+Angers v Caen                                     52  50.00  38.46  11.54 0
+Monaco v GFC Ajaccio                              52  84.62   5.77   9.62 10
+Montpellier v Bordeaux                            52  38.46  36.54  25.00 
+Reims v Toulouse                                  52  48.08  30.77  21.15 
+Rennes v Lorient                                  52  42.31  40.38  17.31 0
+Nantes v St Etienne                               52  19.23  28.85  51.92 
+Lille v Nice                                      52  61.54  21.15  17.31 0
+Marseille v Guingamp                              52  90.38   5.77   3.85 10
+
+bundesliga
+
+Hamburger SV v Bayern Munich                      42  21.43   7.14  71.43 1
+1. FC Köln v VfB Stuttgart                        42  69.05  19.05  11.90 0
+FC Ingolstadt 04 v 1. FSV Mainz 05                42  33.33  47.62  19.05 
+Hannover 96 v SV Darmstadt 98                     42  73.81  16.67   9.52 10
+Hertha BSC v FC Augsburg                          42  66.67  14.29  19.05 1
+TSG 1899 Hoffenheim v Bayer 04 Leverkusen         42  11.90  21.43  66.67 2
+B M'gladbach v Borussia Dortmund                  42  23.81  40.48  35.71 
+Eintracht Frankfurt v VfL Wolfsburg               42  16.67  19.05  64.29 2
+FC Schalke 04 v SV Werder Bremen                  42  85.71  11.90   2.38 10
+
+superleague
+
+Atromitos Athens v Platanias                      17  82.35  17.65   0.00 0
+Veria v Panthrakikos                              17  29.41  58.82  11.76 0
+AEK Athens v Xanthi                               17  94.12   5.88   0.00 10
+PAOK Salonika v PAS Giannina                      17 100.00   0.00   0.00 10
+Panetolikos v Asteras Tripolis                    17  35.29  35.29  29.41 
+Panionios v Iraklis                               17  70.59  17.65  11.76 0
+Olympiakos v Levadiakos                           17  94.12   0.00   5.88 10
+Kalloni v Panathinaikos                           17   0.00   5.88  94.12 21
+
+seriea
+
+Genoa v Sampdoria                                 77  48.05  24.68  27.27 
+Udinese v Atalanta                                68  55.88  29.41  14.71 0
+Chievo v Roma                                     68   2.94  10.29  86.76 21
+Juventus v Verona                                 68  95.59   1.47   2.94 10
+Lazio v Carpi                                     68  95.59   4.41   0.00 10
+Milan v Bologna                                   68  83.82  13.24   2.94 10
+Palermo v Fiorentina                              68   5.88  33.82  60.29 2
+Sassuolo v Frosinone                              68  72.06  22.06   5.88 0
+Empoli v Internazionale                           68   7.35  16.18  76.47 21
+Napoli v Torino                                   68  85.29  10.29   4.41 10
+
+scottish-premier
+
+Dundee Utd v Celtic                               38   0.00  13.16  86.84 21
+Hearts v Motherwell                               38  78.95  21.05   0.00 0
+Kilmarnock v Inverness CT                         38  36.84  31.58  31.58 
+Partick Thistle v Dundee                          38  44.74  36.84  18.42 
+St Johnstone v Hamilton                           38  63.16  23.68  13.16 0
+Ross County v Aberdeen                            38  18.42  31.58  50.00 
+
+laliga
+
+Barcelona v Granada CF                            28  96.43   3.57   0.00 10
+Getafe v Real Betis                               28  50.00  39.29  10.71 0
+Sevilla v Athletic Bilbao                         27  70.37  25.93   3.70 0
+Real Madrid v Deportivo de La Coruña              28  96.43   3.57   0.00 10
+Levante v Rayo Vallecano                          28  50.00  39.29  10.71 0
+Villarreal v Sporting de Gijón                    28  78.57  17.86   3.57 0
+Real Sociedad v Valencia CF                       27   3.70  59.26  37.04 2
+Eibar v Espanyol                                  27  59.26  29.63  11.11 0
+Las Palmas v Málaga                               28  35.71  39.29  25.00 
+Celta de Vigo v Atlético Madrid                   27  18.52  33.33  48.15 
+
+allsvenskan
+
+AIK v GIF Sundsvall                               10  90.00  10.00   0.00 0
+BK Häcken v IF Elfsborg                           10  20.00  60.00  20.00 
+Falkenbergs FF v IFK Göteborg                     10  20.00  10.00  70.00 
+Gefle IF v Helsingborgs IF                        10  50.00  10.00  40.00 
+Hammarby IF v Östersunds FK                       10  90.00  10.00   0.00 0
+Kalmar FF v Jönköpings Södra IF                   10  50.00  20.00  30.00 
+Malmö FF v IFK Norrköping                         10  80.00  10.00  10.00 
+Örebro SK v Djurgårdens IF                        10  40.00  20.00  40.00 

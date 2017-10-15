@@ -1,0 +1,16 @@
+use strict;
+use warnings;
+use 5.010;
+use LWP::Simple;
+
+main(@ARGV);
+
+sub main {
+    # england http://football-data.co.uk/mmz4281/1718/E0.csv
+    get_league("E0");
+}
+
+sub get_league {
+    my ($id)=@_;
+    LWP::
+}

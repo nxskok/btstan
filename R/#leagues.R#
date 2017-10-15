@@ -1,0 +1,408 @@
+lgs=read.csv("leagues.csv",header=T)
+lgs
+v=c(lgs[,3],lgs[,4],lgs[,5])
+v=v[!is.na(v)]
+v
+library(rstan)
+con=get.con()
+pp=run2(con,v,100)
+options(width=120)
+pp[30000:40000,]
+pr=grepl("Steaua",pp[,1],perl=T)
+table(pr)
+pp[pr,]
+
+# don't use run2, but instead get predictives singly
+
+
+run4=function(con,comp,nit=10000)
+{
+  d=get.games(con,comp)
+  xy.list=make.xy(d)
+  model.2=sample.model(p.sc,xy.list,nit)
+  pars=extract(model.2)
+  date=Sys.time()
+  list(pars=pars,xy=xy.list,date=date)
+}
+
+con
+comp
+lgs
+v
+
+l=run4(con,v,100)
+names(l)
+l$xy$gp
+dim(l$pars$o)
+do.predict(l$pars,39,30)
+head(pars)
+names(pars)
+summary(l$pars$h)
+
+# list ratings
+
+list.rat=function(xx)
+    {
+        teams=xx$xy$z$l
+        off=apply(xx$pars$o,2,mean)
+        off=round(off,2)
+        def=apply(xx$pars$d,2,mean)
+        def=round(def,2)
+        tot=off+def
+        o=order(-tot)
+        data.frame(team=teams[o],off=off[o],def=def[o],sum=tot[o],diff=off[o]-def[o])
+    }
+
+#########################################################################
+# start here
+#########################################################################
+
+
+# prelims
+library(rstan)
+con=get.con()
+
+
+# euro
+predictlgs=read.csv("leagues.csv",header=T)
+v=c(lgs[,3],lgs[,4],lgs[,5])
+v=v[!is.na(v)]
+comps=v
+comps
+euro=run4(con,comps,1000)
+
+# england
+comps=c(21322,25191,25197,21389,21390,21391,21395,21396,21397,25263)
+england=run4(con,comps)
+# fa cup
+comps=c(25191,21322,25197,21389,25263,21395,25245,21398,25255,21458,25647,25649,21799,21798,25611,25615,25613,21805,21804,21806,26465,26457,26467,26459,26461,26463,21813,21814,21817,21818,21816,21815,29453,27369,27371,27373,27375,27377,27379,27381,27383,21421,23043,21422,23157,21423,23331,23759,21424,21425,23980,21426,24191,21427,21428,21429)
+facup=run4(con,comps,1000)
+# france
+comps=c(21342,25141,21343,25309)
+france=run4(con,comps)
+# germany
+comps=c(21344,25093,21345,25285)
+germany=run4(con,comps)
+# greece
+comps=c(25991,21671,21672,22736,22737,22741,28841,28843)
+greece=run4(con,comps)
+# italy
+comps=c(21388,27139,26405,21828,21829,21830)
+italy=run4(con,comps)
+# scotland
+comps=c(21449,21450,25295,21563,25299,24811,24813,24815)
+scotland=run4(con,comps)
+# spain
+comps=c(21879,25985,27291,22022,22023,22024)
+spain=run4(con,comps)
+# sweden
+comps=c(23311,23312,30329,30330)
+sweden=run4(con,comps)
+# switzerland
+comps=c(21467,25183,21474,25691)
+switz=run4(con,comps)
+                                        # europe int'l (euro 2012/2016, wcq 2014)
+comps=c(24218,24219,11138,16313,15652,15653,13552,13555,13556,13557)
+intl=run4(con,comps)
+
+
+# select.pred(l)
+
+list.rat(euro)
+euro$xy$z$l
+euro$date
+select.pred(euro)
+pp=pd(euro) ; best10(pp,ept,pt.ptf,4)
+pp=pd(euro) ; best10(pp,ept,pt.ptf,0:1)
+pp=pd(euro) ; best10(pp,ept,pt.ptf,0)
+                  5 May 2015                                      
+  346   583   #        14:45   Juventus            Real Madrid    
+              #   6 May 2015                                      
+   79    84   #10        14:45   Barcelona           Bayern Munich  
+
+84 79 #
+583 346 #
+
+
+pp=pd(euro) ; best10(pp,ept,pt.ptf,4)
+pp=pd(euro) ; best10(pp,ept,pt.ptf,2)
+pp=pd(euro) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(euro) ; best10(pp,ept,pt.ptf,0)
+  479   186   #10   15:05   Napoli            Dnipro Dnipropetrovsk  
+  630   238   #10   15:05   Sevilla           Fiorentina             
+186 479 #2
+238 630 #
+
+
+list.rat(england)
+england$date
+england$xy$z$l
+select.pred(england)
+pp=pd(england) ; best10(pp,ept,pt.ptf,4)
+pp=pd(england) ; best10(pp,ept,pt.ptf,2)
+pp=pd(england) ; best10(pp,ept,pt.ptf,2:1)
+pp=pd(england) ; best10(pp,ept,pt.ptf,1)
+pp=pd(england) ; best10(pp,ept,pt.ptf,0:1)
+pp=pd(england) ; best10(pp,ept,pt.ptf,0)
+            #   2 May 2015                                         
+   6   32   #        07:15   Blackburn               Ipswich       
+   7   30   #        07:15   Blackpool               Huddersfield  
+   8    5   #0        07:15   Bolton                  Birmingham    
+  10   70   #10        07:15   Brentford               Wigan         
+  16    1   #2        07:15   Charlton                Bournemouth   
+  24   51   #10        07:15   Derby                   Reading       
+  33   53   #0        07:15   Leeds                   Rotherham     
+  39   11   #10        07:15   Middlesbrough           Brighton      
+  43   28   #10        07:15   Norwich                 Fulham        
+  44   14   #0        07:15   Nottm Forest            Cardiff       
+  67   56   #10        07:15   Watford                 Sheff Wed     
+  71   40   #10        07:15   Wolves                  Millwall      
+
+                                                            
+
+england$xy$z$l
+pp=pd(england) ; best10(pp,ept,pt.ptf,4)
+pp=pd(england) ; best10(pp,ept,pt.ptf,2)
+pp=pd(england) ; best10(pp,ept,pt.ptf,1:2)
+pp=pd(england) ; best10(pp,ept,pt.ptf,0:1)
+pp=pd(england) ; best10(pp,ept,pt.ptf,0)
+            #    9 May 2015                                         
+  26   61   #10         07:45   Everton                  Sunderland   
+   3   69   #0         10:00   Aston Villa              West Ham     
+  31   13   #0         10:00   Hull                     Burnley      
+  34   58   #         10:00   Leicester                Southampton  
+  42   68   #         10:00   Newcastle                West Brom    
+  60   64   #         10:00   Stoke                    Tottenham    
+  23   38   #21         12:30   Crystal Palace           Man Utd      
+            #   10 May 2015                                         
+  37   50   #10         08:30   Man City                 QPR          
+  17   36   #10         11:00   Chelsea                  Liverpool    
+            #   11 May 2015                                         
+   2   62   #10         15:00   Arsenal                  Swansea      
+
+
+
+list.rat(facup)
+facup$xy$z$l
+select.pred(facup)
+pp=pd(facup) ; best10(pp,ept,pt.ptf,4)
+pp=pd(facup) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(facup) ; best10(pp,ept,pt.ptf,1:2)
+16 13 # aston villa arsenal
+13 16 # arsenal aston villa
+
+
+list.rat(france)
+france$xy$z$l
+select.pred(france)
+pp=pd(france) ; best10(pp,ept,pt.ptf,0)
+pp=pd(france) ; best10(pp,ept,pt.ptf,0:1)
+pp=pd(france) ; best10(pp,ept,pt.ptf,1)
+pp=pd(france) ; best10(pp,ept,pt.ptf,1:2)
+pp=pd(france) ; best10(pp,ept,pt.ptf,2)
+pp=pd(france) ; best10(pp,ept,pt.ptf,4)
+            #    8 May 2015                                                
+  34   16   #10         14:30   Paris St-Germain                Guingamp     
+            #    9 May 2015                                                
+   9   31   #21         11:00   Caen                            Lyon         
+   6   27   #10         14:00   Bordeaux                        Nantes       
+  14   35   #         14:00   Evian Thonon Gaillard           Reims        
+  23   22   #         14:00   Metz                            Lorient      
+  36    5   #         14:00   Rennes                          Bastia       
+  39   21   #         14:00   Toulouse                        Lille        
+            #   10 May 2015                                                
+  20   25   #         08:00   Lens                            Montpellier  
+  37   28   #10         11:00   St Etienne                      Nice         
+  32   24   #         15:00   Marseille                       Monaco       
+                                        
+
+
+
+list.rat(germany)
+germany$xy$z$l
+select.pred(germany)
+pp=pd(germany) ; best10(pp,ept,pt.ptf,5)
+pp=pd(germany) ; best10(pp,ept,pt.ptf,2:1)
+pp=pd(germany) ; best10(pp,ept,pt.ptf,2)
+pp=pd(germany) ; best10(pp,ept,pt.ptf,1)
+pp=pd(germany) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(germany) ; best10(pp,ept,pt.ptf,0)
+            #    8 May 2015                                                           
+  20   17   #0         14:30   Hamburger SV                       Sport-Club Freiburg  
+            #    9 May 2015                                                           
+   6    4   #0         09:30   Bayern Munich                      FC Augsburg          
+   8   23   #10         09:30   Borussia Dortmund                  Hertha BSC           
+   9    5   #         09:30   Borussia Mönchengladbach           Bayer 04 Leverkusen  
+  13   24   #         09:30   Eintracht Frankfurt                TSG 1899 Hoffenheim  
+  21   38   #         09:30   Hannover 96                        SV Werder Bremen     
+  36   29   #         12:30   VfB Stuttgart                      1. FSV Mainz 05      
+            #   10 May 2015                                                           
+  31   39   #21         09:30   SC Paderborn 07                    VfL Wolfsburg        
+  28   34   #         11:30   1. FC Köln                         FC Schalke 04        
+                                        
+                                        
+list.rat(greece)
+greece$date
+greece$xy$z$l
+select.pred(greece)
+pp=pd(greece) ; best10(pp,ept,pt.ptf,5)
+pp=pd(greece) ; best10(pp,ept,pt.ptf,2:1)
+pp=pd(greece) ; best10(pp,ept,pt.ptf,2)
+pp=pd(greece) ; best10(pp,ept,pt.ptf,1)
+pp=pd(greece) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(greece) ; best10(pp,ept,pt.ptf,0)
+            #   10 May 2015                                                
+  11   27   #         12:00   Asteras Tripolis           Kerkyra           
+  16   30   #         12:00   Ergotelis                  Levadiakos        
+  25   12   #         12:00   Kalloni                    Atromitos Athens  
+  37   43   #         12:00   Panathinaikos              PAS Giannina      
+  36   49   #         12:00   Panetolikos                Veria             
+  40   42   #         12:00   Panionios                  PAOK Salonika     
+  41   51   #         12:00   Panthrakikos               Xanthi            
+  45   33   #         12:00   Platanias                  Olympiakos        
+
+                                           
+                                        
+list.rat(italy)
+italy$date
+italy$xy$z$l
+select.pred(italy)
+pp=pd(italy) ; best10(pp,ept,pt.ptf,4)
+pp=pd(italy) ; best10(pp,ept,pt.ptf,2)
+pp=pd(italy) ; best10(pp,ept,pt.ptf,2:1)
+pp=pd(italy) ; best10(pp,ept,pt.ptf,1)
+pp=pd(italy) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(italy) ; best10(pp,ept,pt.ptf,0)
+pp=pd(italy) ; best10(pp,ept,pt.cp)
+   9   37   #   CESENA     SASSUOLO        
+  10   17   #0   CHIEVO     H.VERONA        
+  13   14   #21   EMPOLI     FIORENTINA      
+  16   41   #1   GENOA      TORINO          
+  19    6   #10   JUVENTUS   CAGLIARI        
+  22   18   #0   LAZIO      INTER           
+  24   35   #   MILAN      ROMA            
+  29    1   #0   PALERMO    ATALANTA        
+  30   26   #2   PARMA      NAPOLI          
+  43   36   #   UDINESE    SAMPDORIA       
+
+
+
+list.rat(scotland)
+scotland$date
+scotland$xy$z$l
+select.pred(scotland)
+pp=pd(scotland) ; best10(pp,ept,pt.ptf,4)
+pp=pd(scotland) ; best10(pp,ept,pt.ptf,2)
+pp=pd(scotland) ; best10(pp,ept,pt.ptf,1:2)
+pp=pd(scotland) ; best10(pp,ept,pt.ptf,1)
+pp=pd(scotland) ; best10(pp,ept,pt.ptf,0:1)
+pp=pd(scotland) ; best10(pp,ept,pt.ptf,0)
+            #    8 May 2015                                           
+  16   14   #0         14:45   Motherwell             Kilmarnock       
+            #    9 May 2015                                           
+   6   13   #         10:00   Dundee                 Inverness CT     
+  10   17   #         10:00   Hamilton               Partick Thistle  
+  21   23   #10         10:00   Ross County            St Mirren        
+  22    7   #         10:00   St Johnstone           Dundee Utd       
+            #   10 May 2015                                           
+   1    3   #1         09:30   Aberdeen               Celtic           
+
+                                        l       
+                                      
+
+list.rat(spain)
+spain$date
+spain$xy$z$l
+select.pred(spain)
+pp=pd(spain) ; best10(pp,ept,pt.ptf,4)
+pp=pd(spain) ; best10(pp,ept,pt.ptf,2:1)
+pp=pd(spain) ; best10(pp,ept,pt.ptf,2)
+pp=pd(spain) ; best10(pp,ept,pt.ptf,1)
+pp=pd(spain) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(spain) ; best10(pp,ept,pt.ptf,0)
+                 8 May 2015                                                     
+  12   14   #         14:45   Eibar                     Espanyol                
+            #    9 May 2015                                                     
+  17    9   #         10:00   Granada CF                Córdoba                 
+   6   37   #10         12:00   Barcelona                 Real Sociedad           
+  34   45   #10         14:00   Real Madrid               Valencia CF             
+4   11   #0         16:00   Athletic Bilbao           Deportivo de La Coruña  
+            #   10 May 2015                                                     
+  21    5   #21         06:00   Levante                   Atlético Madrid         
+  46   13   #0         11:00   Villarreal                Elche                   
+   3   24   #         13:00   Almería                   Málaga                  
+   8   42   #2         15:00   Celta de Vigo             Sevilla                 
+            #   11 May 2015                                                     
+  31   15   #         14:45   Rayo Vallecano            Getafe                  
+
+
+sweden$date
+sweden$xy$z$l                                              
+pp=pd(sweden) ; best10(pp,ept,pt.ptf,4)
+pp=pd(sweden) ; best10(pp,ept,pt.ptf,2)
+pp=pd(sweden) ; best10(pp,ept,pt.ptf,2:1)
+pp=pd(sweden) ; best10(pp,ept,pt.ptf,1)
+pp=pd(sweden) ; best10(pp,ept,pt.ptf,1:0)
+pp=pd(sweden) ; best10(pp,ept,pt.ptf,0)
+            #    8 May 2015                                             
+  22   20   #21         13:00   Kalmar FF                 IFK Göteborg    
+            #    9 May 2015                                             
+  18   13   #10         12:00   Helsingborgs IF           Gefle IF        
+            #   10 May 2015                                             
+  10   16   #         09:00   Falkenbergs FF            Halmstads BK    
+   2   27   #10         11:30   AIK                       IFK Norrköping  
+  15   28   #         11:30   BK Häcken                 Örebro SK       
+            #   11 May 2015                                             
+   5    8   #         13:00   Åtvidabergs FF            Djurgårdens IF  
+  17   14   #10         13:00   Hammarby IF               GIF Sundsvall   
+   9   25   #         13:05   IF Elfsborg               Malmö FF        
+
+                                                                        
+
+
+list.rat(switz)
+switz$date
+switz$xy$z$l
+select.pred(switz)
+pp=pd(switz) ; best10(pp,ept,pt.spl)
+  21    2   #   2015-05-10 16:00   66   Zuerich          Basel        
+   1    6   #   2015-05-09 17:45   67   Aarau            Grasshopper  
+  20   14   #   2015-05-10 13:45   68   Young Boys       St Gallen    
+  11   15   #   2015-05-10 13:45   69   Luzern           Thun         
+  13   16   #   2015-05-09 20:00   70   Sion             Vaduz        
+
+    
+
+
+list.rat(intl)
+intl$xy$z$l
+select.pred(intl)
+pp=pd(intl) ; best10(pp,ept,pt.cp)
+  51   15   #   Mar 27   Switzerland        Estonia     
+  48   44   #            Slovenia           San Marino  
+  34   50   #            Moldova            Sweden      
+  35   43   #            Montenegro         Russia      
+  29    4   #            Liechtenstein      Austria     
+  32    6   #            Macedonia          Belarus     
+  47   31   #            Slovakia           Luxembourg  
+  49   53   #            Spain              Ukraine     
+  14   30   #            England            Lithuania   
+  27   24   #   Mar 28   Kazakhstan         Iceland     
+  12   28   #            Czech Rep          Latvia      
+  10   38   #            Croatia            Norway      
+  25   54   #            Israel             Wales       
+   5   33   #            Azerbaijan         Malta       
+   9   26   #            Bulgaria           Italy       
+   7   11   #            Belgium            Cyprus      
+  36   52   #            Netherlands        Turkey      
+   2    8   #            Andorra            Bosnia-H    
+  19   20   #   Mar 29   Georgia            Germany     
+  45   21   #            Scotland           Gibraltar   
+  42   16   #            Romania            Faroe Is    
+  37   17   #            Northern Ireland   Finland     
+   1    3   #            Albania            Armenia     
+  23   22   #            Hungary            Greece      
+  40   46   #            Portugal           Serbia      
+  41   40   #            Rep of Ireland     Poland      
+  25    7   #   Mar 31   Israel             Belgium     
+            #                                           
