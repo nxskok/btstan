@@ -83,11 +83,11 @@ leagues[ij]
 # fill in missing: these are games that I already have, collecting results; this is good.
 
 
-tibble(days=seq(0.1,2,0.1)) %>% mutate(which=map(days,get_which,games)) %>% 
+tibble(days=seq(0.1,3,0.1)) %>% mutate(which=map(days,get_which,games)) %>% 
   mutate(rows=map_dbl(which,nrow)) %>% ggplot(aes(x=days,y=rows))+geom_point()+geom_line()
 # get_which(0.9,games)
 
-xx=get_results(games,1.9)
+xx=get_results(games,3)
 xx %>% select(-(1:3)) %>% filter(str_detect(score," - ")) %>% arrange(comp) %>% print(n=Inf)
 xx %>% filter(str_detect(score," - ")) %>% count(country) %>% print(n=Inf)
 

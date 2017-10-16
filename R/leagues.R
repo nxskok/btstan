@@ -325,9 +325,9 @@ txt="
 36,594,21,Anderlecht v Paris SG                        
 87,542,10,Barcelona v Olympiakos                       
 93,141,10,Bayern Mun v Celtic                          
-99,464,21,Benfica v Man Utd                            
+99,464,2 ,Benfica v Man Utd                            
 144,633,10,Chelsea v Roma                               
-163,89,0 ,CSKA v Basel                                 
+163,89,X ,CSKA v Basel                                 
 362,732,10,Juventus v Sporting                          
 "
 d=diff.games(txt,'euc',F)
@@ -354,7 +354,7 @@ txt="
 68,627,10,Austria Vienna v HNK Rijeka                  
 205,872,10,Dynamo Kiev v Young Boys                     
 227,543,X ,Everton v Lyon                               
-322,346,10,Hoffenheim v Istanbul Basaksehir             
+322,346,0 ,Hoffenheim v Istanbul Basaksehir             
 678,441,2 ,Sheriff Tiraspol v Lokomotiv Moscow          
 697,567,X ,Skenderbeu v Partizan Belgrade               
 730,447,0 ,Sporting Braga v Ludo Razgd                  
@@ -375,7 +375,7 @@ txt="
 66,9,10,Tottenham v Bournemouth                      
 68,2,21,Watford v Arsenal                            
 12,26,X ,Brighton v Everton                           
-60,41,XS ,Southampton v Newcastle                      
+60,41,X ,Southampton v Newcastle                      
 34,69,0 ,Leicester v West Brom                
 "
 d=diff.games(txt,'en ',F)
@@ -384,18 +384,18 @@ best.df(england,d,T)
 # newgames('en2')
 # show(england)
 txt="
-5,18,2 ,Birmingham v Cardiff                         
-13,16,10,Bristol City v Burton                        
-4,38,X ,Barnsley v Middlesbrough                     
-8,58,21,Bolton v Sheff Wed                           
-11,39,0 ,Brentford v Millwall                         
-28,51,0 ,Fulham v Preston                             
-33,53,10,Leeds v Reading                              
-43,31,0 ,Norwich v Hull                               
-57,32,0 ,Sheff Utd v Ipswich                          
-63,52,X ,Sunderland v QPR                             
-72,3,X ,Wolves v Aston Villa                         
-24,44,0 ,Derby v Nottm Forest            
+3,28,0 ,Aston Villa v Fulham                         
+4,31,X ,Barnsley v Hull                              
+8,52,X ,Bolton v QPR                                 
+11,63,X ,Brentford v Sunderland                       
+13,33,X ,Bristol City v Leeds                         
+24,58,0 ,Derby v Sheff Wed                            
+38,18,0 ,Middlesbrough v Cardiff                      
+44,16,10,Nottm Forest v Burton                        
+57,53,0 ,Sheff Utd v Reading                          
+72,51,10,Wolves v Preston                             
+39,5,X ,Millwall v Birmingham                        
+32,43,X ,Ipswich v Norwich                       
 "
 d=diff.games(txt,'en2',F)
 best.df(england,d,T)
@@ -404,16 +404,16 @@ best.df(england,d,T)
 # newgames('fr ')
 # show(france)
 txt="
-20,23,X ,Lyon v Monaco                                
-13,32,21,Dijon v Paris SG                             
-10,4,0 ,Caen v Angers                                
-14,36,X ,Guingamp v Rennes                            
-18,42,0 ,Lille v Troyes                               
-38,22,10,Saint-Étienne v Metz                         
-40,3,0 ,Toulouse v Amiens                            
-7,26,0 ,Bordeaux v Nantes                            
-24,27,2 ,Montpellier v Nice                           
-39,21,21,Strasbourg v Marseille                 
+38,24,10,Saint-Étienne v Montpellier                  
+23,10,10,Monaco v Caen                                
+3,7,21,Amiens v Bordeaux                            
+4,40,X ,Angers v Toulouse                            
+22,13,0 ,Metz v Dijon                                 
+26,14,0 ,Nantes v Guingamp                            
+36,18,X ,Rennes v Lille                               
+27,39,10,Nice v Strasbourg                            
+42,20,2 ,Troyes v Lyon                                
+21,32,X ,Marseille v PSG                             
 "
 d=diff.games(txt,'fr ',F)
 best.df(france,d,T)
@@ -421,15 +421,15 @@ best.df(france,d,T)
 # newgames('de ')
 # show(germany)
 txt="
-35,12,0 ,Stuttgart v 1. FC Köln                       
-2,14,10,Bayern Mun v SC Freiburg                     
-17,10,X ,Hannover v Eintracht Frankfurt               
-19,33,X ,Hertha BSC v Schalke                         
-20,1,10,Hoffenheim v FC Augsburg                     
-26,16,0 ,Mainz 05 v Hamburger SV                      
-7,30,10,Bor Dortmd v RB Leipzig                      
-25,38,10,Bayer Levkn v VfL Wolfsburg                  
-37,27,X ,Werder Bremen v B Gladbach                   
+33,26,0 ,Schalke v Mainz                              
+1,17,0 ,Augsburg v Hannover                          
+27,25,X ,B Mgladbach v B Leverkusen                   
+10,7,1 ,Frankfurt v B Dortmund                       
+30,35,10,RB Leipzig v Stuttgart                       
+16,2,1 ,Hamburg v Bayern Munich                      
+12,37,X ,Köln v Werder Bremen                         
+14,37,X ,Freiburg v Hertha Berlin                     
+38,20,1 ,Wolfsburg v Hoffenheim                       
 "
 d=diff.games(txt,'de ',F)
 best.df(germany,d,T)
@@ -443,7 +443,7 @@ txt="
 15,8,10,PAOK Salonika v Lamia                        
 2,7,0 ,Apollon Smyrnis v Kerkyra                    
 13,10,0 ,Panetolikos v Levadiakos                     
-18,1,1 ,Xanthi v AEK Athens                          
+18,1,X ,Xanthi v AEK Athens                          
 12,9,10,Panathinaikos v Larissa                      
 "
 d=diff.games(txt,'gr ',F)
@@ -462,7 +462,7 @@ txt="
 35,2,X ,Sampdoria v Atalanta                         
 36,11,X ,Sassuolo v Chievo                            
 20,24,0 ,Inter Milan v Milan                          
-44,5,10,Hellas Verona v Benevento                 
+44,5,0 ,Hellas Verona v Benevento                 
 "
 d=diff.games(txt,'it ',F)
 best.df(italy,d,T)
@@ -475,12 +475,9 @@ best.df(italy,d,T)
 # newgames('sc ')
 # show(scotland)
 txt="
-23,21,X ,St Johnstone v Rangers                       
-4,6,10,Celtic v Dundee                              
-10,17,X ,Hamilton v Motherwell                        
-12,1,X ,Hibernian v Aberdeen                         
-18,14,0 ,Partick Thistle v Kilmarnock                 
-22,11,X ,Ross County v Hearts                         
+11,23,X ,Hearts v St Johnstone                        
+18,6,X ,Partick Thistle v Dundee                     
+22,10,0 ,Ross County v Hamilton         
 "
 d=diff.games(txt,'sc ',F)
 best.df(scotland,d,T)
@@ -494,7 +491,7 @@ txt="
 1,38,2 ,Alavés v Real Sociedad                       
 6,7,X ,Atl Madrid v Barcelona                       
 13,21,X ,Eibar v Deportivo La Coruña                  
-18,45,X ,Girona v Villarreal                          
+18,45,2 ,Girona v Villarreal                          
 28,23,X ,Malaga v Leganés                             
 9,42,X ,Real Betis v Valencia                        
 22,11,X ,Las Palmas v Celta Vigo                      
@@ -510,9 +507,9 @@ txt="
 16,1,0 ,BK Häcken v AFC United                       
 30,27,0 ,Östersunds FK v Örebro SK                    
 2,21,10,AIK v Jönköpings Södra IF                    
-10,15,10,IF Elfsborg v GIF Sundsvall                  
-31,9,1 ,IK Sirius v Djurgårdens IF                   
-26,24,1 ,IFK Norrköping v Malmö FF                    
+10,15,0 ,IF Elfsborg v GIF Sundsvall                  
+31,9,2 ,IK Sirius v Djurgårdens IF                   
+26,24,X ,IFK Norrköping v Malmö FF                    
 22,18,X ,Kalmar FF v Hammarby IF                      
 "
 d=diff.games(txt,'se ',F)
